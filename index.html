@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UniGuide IBBUL </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #00c6ff, #04e268);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .btns {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            animation: slideUp 1s ease-in-out;
+        }
+
+        .btns a {
+            text-decoration: none;
+            padding: 12px 24px;
+            background: white;
+            color: #0072ff;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: transform 0.2s ease;
+        }
+
+        .btns a:hover {
+            transform: scale(1.05);
+        }
+
+        .screenshots {
+            margin-top: 50px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .screenshots img {
+            width: 250px;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 0.9rem;
+            color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📱 UniGuide IBBUL</h1>
+        <p>Your all-in-one academic companion for IBB University: GPA/CGPA calculator, campus map, handouts, CBT quiz practice & more.</p>
+    </header>
+
+    <div class="btns">
+        <a href="https://your-google-drive-link.com" target="_blank">📥 Download from Google Drive</a>
+        <a href="https://your-github-apk-link.com" target="_blank">🐙 Download APK (GitHub)</a>
+        <a href="#features">📌 Features</a>
+    </div>
+
+    <div class="screenshots">
+        <img src="images/SplashScreen.jpg" alt="App Screenshot 1" />
+        <img src="images/Home.jpg" alt="App Screenshot 2" />
+        <img src="images/Fac.jpg" alt="App Screenshot 3" />
+        <img src="images/GPA.jpg" alt="App Screenshot 3" />
+    </div>
+
+    <footer>
+        &copy; 2025 Abdulshaheed | Built with 💙 using Jetpack Compose
+    </footer>
+</body>
+</html>
